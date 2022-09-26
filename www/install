@@ -1,0 +1,42 @@
+#!/usr/bin/env python
+
+import shutil
+import os
+import jinja2
+import json
+
+files = ['favicon.ico',
+         'galaxy-formation-meeting.css']
+
+for file in files:
+    outfile = "{h}/www/{p}".format(p=file, h=os.getenv('HOME'))
+    shutil.copyfile(file, outfile)
+
+fp = open('pages.json')
+pages = json.load(fp)
+fp.close() 
+pagelinks = [{'link':p, 'name':pages[p]['name']} for p in pages]
+
+fp = open("header.html")
+header = fp.read()
+fp.close()
+
+environment = jinja2.Environment(loader=jinja2.FileSystemLoader("./"))
+template = environment.get_template("page.j2")
+
+for current_page in pages:
+    print(current_page)
+    pdict = pages[current_page]
+    pdict['header'] = header
+    pdict['current_page'] = current_page
+    pdict['pagelinks'] = pagelinks
+
+    fp = open("{p}.html".format(p=current_page))
+    pdict['contents'] = fp.read()
+    fp.close()
+
+    content = template.render(pdict)
+    outfile = "{h}/www/{p}.html".format(p=current_page, h=os.getenv('HOME'))
+    fp = open(outfile, "w")
+    fp.write(content)
+    fp.close()
