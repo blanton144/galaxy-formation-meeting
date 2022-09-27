@@ -6,7 +6,8 @@ import jinja2
 import json
 
 files = ['favicon.ico',
-         'galaxy-formation-meeting.css']
+         'galaxy-formation-meeting.css',
+         'banner.png']
 
 for file in files:
     outfile = "{h}/www/{p}".format(p=file, h=os.getenv('HOME'))
