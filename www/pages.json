@@ -6,5 +6,9 @@
  "location":{
   "name": "Location",
   "title": "Location: Biosphere2",
+  "lead": ""},
+ "soc":{
+  "name": "SOC",
+  "title": "Scientific Organizing Committee",
   "lead": ""}
 }
