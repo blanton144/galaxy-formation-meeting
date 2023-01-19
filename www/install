@@ -8,7 +8,9 @@ import json
 
 files = ['favicon.ico',
          'galaxy-formation-meeting.css',
-         'banner.png']
+         'banner.png',
+         'biosphere.png',
+         'biosphere-map.png']
 
 for file in files:
     outfile = "{h}/www/{p}".format(p=file, h=os.getenv('HOME'))

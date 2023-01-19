@@ -7,6 +7,10 @@
   "name": "Location",
   "title": "Location: Biosphere2",
   "lead": ""},
+ "travel":{
+  "name": "Travel",
+  "title": "Travel Details",
+  "lead": ""},
  "soc":{
   "name": "SOC",
   "title": "Scientific Organizing Committee",
