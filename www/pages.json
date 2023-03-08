@@ -3,6 +3,10 @@
   "title": "Wide-Field Spectroscopy vs Galaxy Formation Theory",
   "lead": "A meeting to identify new research directions testing and informing galaxy formation theory. <br/> March 28 to 31, 2023 <br/> Biosphere 2 <br/> (outside Tucson, Arizona)"
   },
+ "schedule":{
+  "name": "Schedule",
+  "title": "Schedule",
+  "lead": ""},
  "location":{
   "name": "Location",
   "title": "Location: Biosphere2",
@@ -10,6 +14,10 @@
  "travel":{
   "name": "Travel",
   "title": "Travel Details",
+  "lead": ""},
+ "participants":{
+  "name": "Participants",
+  "title": "Participants",
   "lead": ""},
  "soc":{
   "name": "SOC",
