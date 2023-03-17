@@ -19,6 +19,10 @@
   "name": "Participants",
   "title": "Participants",
   "lead": ""},
+ "conduct":{
+  "name": "Conduct",
+  "title": "Code of Conduct",
+  "lead": ""},
  "soc":{
   "name": "SOC",
   "title": "Scientific Organizing Committee",
