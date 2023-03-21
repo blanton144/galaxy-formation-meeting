@@ -23,6 +23,10 @@
   "name": "Conduct",
   "title": "Code of Conduct",
   "lead": ""},
+ "covid":{
+  "name": "COVID",
+  "title": "COVID Safety Policies",
+  "lead": ""},
  "soc":{
   "name": "SOC",
   "title": "Scientific Organizing Committee",
